@@ -1,6 +1,5 @@
 from pathlib import Path
 import os
-import dj_database_url
 from django.test.runner import DiscoverRunner
 import django_heroku
 
@@ -48,7 +47,7 @@ ROOT_URLCONF = 'SimpleMLPrediction.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -98,6 +97,10 @@ STATIC_URL = "static/"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
     
 # Use HerokuDiscoverRunner on Heroku CI
 if "CI" in os.environ:

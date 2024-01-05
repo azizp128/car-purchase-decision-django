@@ -2,7 +2,7 @@ from django.shortcuts import render
 from joblib import load
 from django.http import HttpResponse
 
-model = load('./carBuyDecision/assets/model/model.joblib')
+model = load('./assets/model/model.joblib')
 
 def index(request):
     return render(request, 'index.html')
