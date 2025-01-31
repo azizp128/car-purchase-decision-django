@@ -9,4 +9,4 @@ Repositori ini juga berisi file .ipynb yang berisi kode sumber untuk melatih mod
 - [Dataset Kaggle](https://www.kaggle.com/datasets/gabrielsantello/cars-purchase-decision-dataset)
 
 ## Screenshot
-![Screenshot Halaman](assets/screenshot.png)
+![Screenshot Halaman](https://raw.githubusercontent.com/azizp128/car-purchase-decision-django/refs/heads/main/assets/screenshot.png)
